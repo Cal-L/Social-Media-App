@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue-Roman.otf">
+            <string>HelveticaNeue-Roman</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Comment" rowHeight="55" id="d7r-Mz-nMb" customClass="CommentCellController" customModule="comblie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="543" height="55"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="d7r-Mz-nMb" id="yqH-tA-QQx">
+                <rect key="frame" x="0.0" y="0.0" width="543" height="54.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="David Beckham" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWI-lT-Fi2">
+                        <rect key="frame" x="65" y="7" width="463" height="14"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="11.5"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Hahahah this is totally me!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDW-mn-geN">
+                        <rect key="frame" x="65" y="19" width="463" height="12.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Roman" family="Helvetica Neue" pointSize="10.5"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Persona" translatesAutoresizingMaskIntoConstraints="NO" id="9hz-wA-17u">
+                        <rect key="frame" x="15" y="2" width="38" height="38"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="38" id="9b5-X6-BkH"/>
+                            <constraint firstAttribute="height" constant="40" id="ile-wP-cq5"/>
+                            <constraint firstAttribute="width" secondItem="9hz-wA-17u" secondAttribute="height" multiplier="1:1" id="qrq-HE-7tR"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ile-wP-cq5"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Just then" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6wM-6O-iOx">
+                        <rect key="frame" x="65" y="29.5" width="463" height="10.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="8.5"/>
+                        <color key="textColor" red="0.76862745099999996" green="0.75294117650000003" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="aWI-lT-Fi2" firstAttribute="leading" secondItem="9hz-wA-17u" secondAttribute="trailing" constant="10" id="5FG-DY-7xU"/>
+                    <constraint firstAttribute="trailing" secondItem="6wM-6O-iOx" secondAttribute="trailing" constant="15" id="6NN-NI-U2z"/>
+                    <constraint firstItem="aWI-lT-Fi2" firstAttribute="top" secondItem="9hz-wA-17u" secondAttribute="top" constant="4" id="6Tf-Xx-8MI"/>
+                    <constraint firstItem="CDW-mn-geN" firstAttribute="top" secondItem="aWI-lT-Fi2" secondAttribute="bottom" id="Izy-IO-Mot"/>
+                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="9hz-wA-17u" secondAttribute="bottom" constant="5" id="J5N-4P-Uls"/>
+                    <constraint firstItem="CDW-mn-geN" firstAttribute="leading" secondItem="9hz-wA-17u" secondAttribute="trailing" constant="10" id="Kui-dZ-wek"/>
+                    <constraint firstAttribute="trailing" secondItem="aWI-lT-Fi2" secondAttribute="trailing" constant="15" id="Ldr-pC-wyk"/>
+                    <constraint firstItem="CDW-mn-geN" firstAttribute="leading" secondItem="9hz-wA-17u" secondAttribute="trailing" id="MoZ-6j-aZM"/>
+                    <constraint firstAttribute="trailing" secondItem="CDW-mn-geN" secondAttribute="trailing" constant="15" id="OmW-rD-8EJ"/>
+                    <constraint firstItem="aWI-lT-Fi2" firstAttribute="top" secondItem="9hz-wA-17u" secondAttribute="top" id="Plt-hX-WiE"/>
+                    <constraint firstAttribute="trailing" secondItem="CDW-mn-geN" secondAttribute="trailing" constant="15" id="QLh-bq-aWy"/>
+                    <constraint firstItem="aWI-lT-Fi2" firstAttribute="leading" secondItem="9hz-wA-17u" secondAttribute="trailing" id="Rie-Xk-2Je"/>
+                    <constraint firstItem="6wM-6O-iOx" firstAttribute="leading" secondItem="9hz-wA-17u" secondAttribute="trailing" constant="10" id="Xex-y6-z68"/>
+                    <constraint firstItem="9hz-wA-17u" firstAttribute="leading" secondItem="yqH-tA-QQx" secondAttribute="leading" constant="15" id="eHd-m4-PiM"/>
+                    <constraint firstAttribute="bottom" secondItem="6wM-6O-iOx" secondAttribute="bottom" constant="10" id="gMO-eT-ucu"/>
+                    <constraint firstItem="9hz-wA-17u" firstAttribute="top" secondItem="yqH-tA-QQx" secondAttribute="top" constant="2" id="get-9h-KFM"/>
+                    <constraint firstItem="6wM-6O-iOx" firstAttribute="top" secondItem="CDW-mn-geN" secondAttribute="top" id="jtN-LK-kLB"/>
+                    <constraint firstItem="6wM-6O-iOx" firstAttribute="top" secondItem="CDW-mn-geN" secondAttribute="bottom" id="nly-Pa-rsX"/>
+                    <constraint firstAttribute="trailing" secondItem="6wM-6O-iOx" secondAttribute="trailing" constant="15" id="pBa-W1-Dx1"/>
+                    <constraint firstItem="6wM-6O-iOx" firstAttribute="leading" secondItem="9hz-wA-17u" secondAttribute="trailing" constant="10" id="q6z-Xs-xDh"/>
+                    <constraint firstItem="CDW-mn-geN" firstAttribute="top" secondItem="aWI-lT-Fi2" secondAttribute="bottom" id="rEq-8b-HPN"/>
+                    <constraint firstItem="CDW-mn-geN" firstAttribute="top" secondItem="aWI-lT-Fi2" secondAttribute="bottom" constant="1" id="sUH-yH-T1M"/>
+                    <constraint firstAttribute="trailing" secondItem="aWI-lT-Fi2" secondAttribute="trailing" constant="15" id="t8x-Tc-U5y"/>
+                    <constraint firstItem="6wM-6O-iOx" firstAttribute="top" secondItem="CDW-mn-geN" secondAttribute="bottom" constant="1" id="u5t-jA-p5R"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="J5N-4P-Uls"/>
+                        <exclude reference="Plt-hX-WiE"/>
+                        <exclude reference="Rie-Xk-2Je"/>
+                        <exclude reference="t8x-Tc-U5y"/>
+                        <exclude reference="Izy-IO-Mot"/>
+                        <exclude reference="MoZ-6j-aZM"/>
+                        <exclude reference="QLh-bq-aWy"/>
+                        <exclude reference="rEq-8b-HPN"/>
+                        <exclude reference="6NN-NI-U2z"/>
+                        <exclude reference="Xex-y6-z68"/>
+                        <exclude reference="jtN-LK-kLB"/>
+                        <exclude reference="nly-Pa-rsX"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="postComment" destination="CDW-mn-geN" id="rdA-oI-YPb"/>
+                <outlet property="postTime" destination="6wM-6O-iOx" id="CQq-Bg-fM7"/>
+                <outlet property="postUsername" destination="aWI-lT-Fi2" id="fNS-5V-lYB"/>
+                <outlet property="profileImage" destination="9hz-wA-17u" id="dvR-m7-a3i"/>
+            </connections>
+            <point key="canvasLocation" x="107.5" y="210.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Persona" width="600" height="600"/>
+    </resources>
+</document>

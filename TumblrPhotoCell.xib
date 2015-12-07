@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TumblrPhoto" rowHeight="209" id="CFr-pf-ARk" customClass="TumblrPhotoCellController" customModule="comblie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="209"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CFr-pf-ARk" id="oIs-eL-0Uz">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="208.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunsetShort" translatesAutoresizingMaskIntoConstraints="NO" id="Gdp-ej-0EU">
+                        <rect key="frame" x="0.0" y="0.5" width="600" height="208.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="343.5" id="STj-vb-FbB"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="STj-vb-FbB"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradientFeed" translatesAutoresizingMaskIntoConstraints="NO" id="PZL-JC-UYG">
+                        <rect key="frame" x="0.0" y="114" width="600" height="94"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qon-D1-bIQ">
+                        <rect key="frame" x="15" y="189" width="570" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="36Z-xC-S29"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Source: lazypacific #followme" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1I-7M-15j">
+                        <rect key="frame" x="64" y="169" width="521" height="15.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Persona" translatesAutoresizingMaskIntoConstraints="NO" id="jgY-kT-Ws2">
+                        <rect key="frame" x="15" y="143.5" width="42" height="42"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="42" id="TV0-tj-j7Z"/>
+                            <constraint firstAttribute="width" secondItem="jgY-kT-Ws2" secondAttribute="height" multiplier="1:1" id="cO2-hl-D7O"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEL-cw-ncH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="209"/>
+                        <connections>
+                            <action selector="enlarge:" destination="CFr-pf-ARk" eventType="touchUpInside" id="RQw-W4-UVX"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lilyrose reblogged ilovepotato's post on Tumblr" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KdC-CE-3a5">
+                        <rect key="frame" x="15" y="194" width="570" height="12"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="10"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="OzF-nB-aMl">
+                        <rect key="frame" x="15" y="7" width="47" height="15"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aj9-OZ-T22">
+                                <rect key="frame" x="0.0" y="0.0" width="16" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="2iQ-Be-tpN"/>
+                                    <constraint firstAttribute="width" secondItem="aj9-OZ-T22" secondAttribute="height" multiplier="97:92" id="eBQ-vr-gXP"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="tumblrRepost"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Tk-2d-YmE">
+                                <rect key="frame" x="31" y="2" width="16" height="13"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="13" id="Lc7-V1-GJP"/>
+                                    <constraint firstAttribute="width" secondItem="7Tk-2d-YmE" secondAttribute="height" multiplier="21:18" id="TF3-li-0kn"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="tumblrHeart"/>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="7Tk-2d-YmE" firstAttribute="leading" secondItem="aj9-OZ-T22" secondAttribute="trailing" constant="10" id="4nv-iP-ZcD"/>
+                            <constraint firstAttribute="trailing" secondItem="7Tk-2d-YmE" secondAttribute="trailing" id="aEA-O0-qi6"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4nv-iP-ZcD"/>
+                                <exclude reference="aEA-O0-qi6"/>
+                            </mask>
+                        </variation>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="KdC-CE-3a5" secondAttribute="bottom" constant="3" id="8Mn-yd-dVc"/>
+                    <constraint firstItem="B1I-7M-15j" firstAttribute="leading" secondItem="jgY-kT-Ws2" secondAttribute="trailing" constant="7" id="AKm-Le-ijC"/>
+                    <constraint firstAttribute="trailing" secondItem="B1I-7M-15j" secondAttribute="trailing" constant="15" id="Bqb-hs-ccS"/>
+                    <constraint firstItem="Gdp-ej-0EU" firstAttribute="leading" secondItem="oIs-eL-0Uz" secondAttribute="leading" id="CJs-KO-iTE"/>
+                    <constraint firstItem="qon-D1-bIQ" firstAttribute="top" secondItem="B1I-7M-15j" secondAttribute="bottom" constant="5" id="Igu-Qu-XID"/>
+                    <constraint firstItem="PZL-JC-UYG" firstAttribute="leading" secondItem="oIs-eL-0Uz" secondAttribute="leading" id="KkE-aL-P5A"/>
+                    <constraint firstItem="Gdp-ej-0EU" firstAttribute="top" secondItem="oIs-eL-0Uz" secondAttribute="top" id="MKy-ma-RAW"/>
+                    <constraint firstAttribute="trailing" secondItem="KdC-CE-3a5" secondAttribute="trailing" constant="15" id="aLE-w6-i1o"/>
+                    <constraint firstItem="B1I-7M-15j" firstAttribute="top" relation="greaterThanOrEqual" secondItem="jgY-kT-Ws2" secondAttribute="top" constant="5" id="cSD-GG-VBh"/>
+                    <constraint firstItem="OzF-nB-aMl" firstAttribute="leading" secondItem="oIs-eL-0Uz" secondAttribute="leading" constant="15" id="dnm-dm-fPJ"/>
+                    <constraint firstItem="KdC-CE-3a5" firstAttribute="leading" secondItem="oIs-eL-0Uz" secondAttribute="leading" constant="15" id="fPP-tr-VEG"/>
+                    <constraint firstItem="qon-D1-bIQ" firstAttribute="leading" secondItem="oIs-eL-0Uz" secondAttribute="leading" constant="15" id="gnb-1h-VpO"/>
+                    <constraint firstItem="KdC-CE-3a5" firstAttribute="top" secondItem="qon-D1-bIQ" secondAttribute="bottom" constant="4" id="iNG-Ip-4RR"/>
+                    <constraint firstItem="B1I-7M-15j" firstAttribute="top" secondItem="PZL-JC-UYG" secondAttribute="bottom" id="kSa-TC-BNu"/>
+                    <constraint firstAttribute="bottom" secondItem="Gdp-ej-0EU" secondAttribute="bottom" id="lgM-DQ-lUK"/>
+                    <constraint firstAttribute="trailing" secondItem="Gdp-ej-0EU" secondAttribute="trailing" id="mKH-AH-TRE"/>
+                    <constraint firstItem="jgY-kT-Ws2" firstAttribute="leading" secondItem="oIs-eL-0Uz" secondAttribute="leading" constant="15" id="nkj-4i-1tm"/>
+                    <constraint firstItem="qon-D1-bIQ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="jgY-kT-Ws2" secondAttribute="bottom" constant="5" id="npQ-Hj-VV5"/>
+                    <constraint firstItem="OzF-nB-aMl" firstAttribute="top" secondItem="oIs-eL-0Uz" secondAttribute="top" constant="7" id="pZZ-og-fjn"/>
+                    <constraint firstAttribute="bottom" secondItem="PZL-JC-UYG" secondAttribute="bottom" id="rr3-9R-0k7"/>
+                    <constraint firstAttribute="trailing" secondItem="PZL-JC-UYG" secondAttribute="trailing" id="tk1-KL-BYl"/>
+                    <constraint firstAttribute="trailing" secondItem="qon-D1-bIQ" secondAttribute="trailing" constant="15" id="tyU-aO-pKJ"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="kSa-TC-BNu"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lineHeight" destination="36Z-xC-S29" id="RC4-ba-5ri"/>
+                <outlet property="lineSeparator" destination="qon-D1-bIQ" id="FPp-vi-my0"/>
+                <outlet property="postBackgroundImage" destination="Gdp-ej-0EU" id="FHO-yH-Zwd"/>
+                <outlet property="postText" destination="B1I-7M-15j" id="d4o-P0-xpI"/>
+                <outlet property="profileImage" destination="jgY-kT-Ws2" id="0hZ-XE-xsE"/>
+                <outlet property="statusText" destination="KdC-CE-3a5" id="fgU-rN-bGb"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Persona" width="600" height="600"/>
+        <image name="gradientFeed" width="375" height="94"/>
+        <image name="sunsetShort" width="375" height="171"/>
+        <image name="tumblrHeart" width="49" height="42"/>
+        <image name="tumblrRepost" width="48" height="46"/>
+    </resources>
+</document>

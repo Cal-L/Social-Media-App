@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OutgoingMessage" rowHeight="53" id="HWT-PB-5Y4" customClass="OutgoingMessageCellController" customModule="comblie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="53"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HWT-PB-5Y4" id="BR9-6h-wU9">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="52.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jTt-AZ-pxz">
+                        <rect key="frame" x="125" y="3" width="460" height="49.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3g-k3-9bS">
+                                <rect key="frame" x="10" y="5" width="440" height="38.5"/>
+                                <string key="text">When do you want to go to work for? testing the length of this thing is actually one of the best things thats every happened to my life.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2901960784" green="0.43921568630000002" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="X3g-k3-9bS" firstAttribute="leading" secondItem="jTt-AZ-pxz" secondAttribute="leading" constant="10" id="2Z4-Pq-WSP"/>
+                            <constraint firstItem="X3g-k3-9bS" firstAttribute="top" secondItem="jTt-AZ-pxz" secondAttribute="top" constant="5" id="PUp-KR-umn"/>
+                            <constraint firstAttribute="bottom" secondItem="X3g-k3-9bS" secondAttribute="bottom" constant="6" id="h5F-Sf-ZLw"/>
+                            <constraint firstAttribute="trailing" secondItem="X3g-k3-9bS" secondAttribute="trailing" constant="10" id="zHo-OJ-1Vh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="jTt-AZ-pxz" secondAttribute="trailing" constant="15" id="8Ge-sl-ngS"/>
+                    <constraint firstItem="jTt-AZ-pxz" firstAttribute="top" secondItem="BR9-6h-wU9" secondAttribute="top" constant="3" id="YcL-c1-LEc"/>
+                    <constraint firstItem="jTt-AZ-pxz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="BR9-6h-wU9" secondAttribute="leading" constant="125" id="evj-N2-0c1"/>
+                    <constraint firstAttribute="bottom" secondItem="jTt-AZ-pxz" secondAttribute="bottom" id="j4I-5W-1Zv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="message" destination="X3g-k3-9bS" id="kOb-zm-jhx"/>
+                <outlet property="messageBackground" destination="jTt-AZ-pxz" id="BbD-Y5-l97"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

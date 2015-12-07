@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue-Roman.otf">
+            <string>HelveticaNeue-Roman</string>
+            <string>HelveticaNeue-Roman</string>
+            <string>HelveticaNeue-Roman</string>
+            <string>HelveticaNeue-Roman</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TumblrBlog" rowHeight="198" id="3og-lb-aMY" customClass="TumblrBlogCellController" customModule="comblie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="198"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3og-lb-aMY" id="9KF-kd-1ht">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="197.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="angelina" translatesAutoresizingMaskIntoConstraints="NO" id="szb-lC-h4b">
+                        <rect key="frame" x="15" y="10" width="42" height="42"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="szb-lC-h4b" secondAttribute="height" multiplier="1:1" id="7ye-5p-7rI"/>
+                            <constraint firstAttribute="height" constant="42" id="h7A-Xw-1Wq"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="murieta" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYa-Yc-I2m">
+                        <rect key="frame" x="64" y="33" width="521" height="15.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Roman" family="Helvetica Neue" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ufh-yP-Fpi">
+                        <rect key="frame" x="0.0" y="196" width="600" height="1"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="rUD-kC-zSz"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOVE THIS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Wi-mZ-vTP">
+                        <rect key="frame" x="15" y="154" width="570" height="15.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Roman" family="Helvetica Neue" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NJf-Ax-Qtw">
+                        <rect key="frame" x="15" y="133.5" width="570" height="15.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hZT-Pk-ZJX">
+                                <rect key="frame" x="0.0" y="0.0" width="2" height="15.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="2" id="zp9-os-jEH"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Stay close to anything that makes you glad that you're alive. Dont die before you're dead.&quot;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1cT-3u-Kfx">
+                                <rect key="frame" x="12" y="0.0" width="558" height="15.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Roman" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="hZT-Pk-ZJX" firstAttribute="top" secondItem="NJf-Ax-Qtw" secondAttribute="top" id="3mz-Sb-Lfr"/>
+                            <constraint firstAttribute="bottom" secondItem="hZT-Pk-ZJX" secondAttribute="bottom" id="lYd-bg-j0U"/>
+                        </constraints>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LMl-oU-wyd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="197.5"/>
+                        <connections>
+                            <action selector="enlarge:" destination="3og-lb-aMY" eventType="touchUpInside" id="xz4-9g-IQQ"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lilyrose reblogged ilovepotato's post on Tumblr" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aol-Am-mwF">
+                        <rect key="frame" x="64" y="15.5" width="521" height="15.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
+                        <color key="textColor" red="0.20784313730000001" green="0.27058823529999998" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="YjJ-1q-Aqa">
+                        <rect key="frame" x="15" y="173" width="570" height="15"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Source: kaliforniacation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lnk-sQ-Qjl">
+                                <rect key="frame" x="0.0" y="1" width="508" height="14"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Roman" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" red="0.42745098040000001" green="0.42745098040000001" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7J-8H-mk6">
+                                <rect key="frame" x="523" y="0.0" width="16" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="EXQ-c9-do6"/>
+                                    <constraint firstAttribute="width" secondItem="J7J-8H-mk6" secondAttribute="height" multiplier="97:92" id="w3V-dW-vek"/>
+                                </constraints>
+                                <color key="tintColor" red="0.69019607839999997" green="0.69019607839999997" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="tumblrRepost"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGK-bN-kS1">
+                                <rect key="frame" x="554" y="2" width="16" height="13"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jGK-bN-kS1" secondAttribute="height" multiplier="21:18" id="4XM-fa-zXt"/>
+                                    <constraint firstAttribute="height" constant="13" id="vx6-b5-jVj"/>
+                                </constraints>
+                                <color key="tintColor" red="0.85098039219999999" green="0.36862745099999999" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="tumblrHeart"/>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="jGK-bN-kS1" firstAttribute="leading" secondItem="J7J-8H-mk6" secondAttribute="trailing" constant="10" id="O0C-lv-FM9"/>
+                            <constraint firstAttribute="trailing" secondItem="jGK-bN-kS1" secondAttribute="trailing" id="rqL-qQ-EGf"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="O0C-lv-FM9"/>
+                                <exclude reference="rqL-qQ-EGf"/>
+                            </mask>
+                        </variation>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ufh-yP-Fpi" secondAttribute="trailing" id="3yV-eI-zgC"/>
+                    <constraint firstItem="NJf-Ax-Qtw" firstAttribute="top" relation="greaterThanOrEqual" secondItem="szb-lC-h4b" secondAttribute="bottom" constant="8" id="4IJ-ew-L0z"/>
+                    <constraint firstItem="ufh-yP-Fpi" firstAttribute="leading" secondItem="9KF-kd-1ht" secondAttribute="leading" id="84a-l7-Gwi"/>
+                    <constraint firstAttribute="trailing" secondItem="YjJ-1q-Aqa" secondAttribute="trailing" constant="15" id="93p-o5-CuE"/>
+                    <constraint firstAttribute="trailing" secondItem="7Wi-mZ-vTP" secondAttribute="trailing" constant="15" id="AOC-na-dVr"/>
+                    <constraint firstItem="NJf-Ax-Qtw" firstAttribute="top" relation="greaterThanOrEqual" secondItem="fYa-Yc-I2m" secondAttribute="bottom" constant="5" id="ATe-Xt-8iF"/>
+                    <constraint firstAttribute="trailing" secondItem="Aol-Am-mwF" secondAttribute="trailing" constant="15" id="FRs-uf-W7j"/>
+                    <constraint firstItem="LMl-oU-wyd" firstAttribute="top" secondItem="9KF-kd-1ht" secondAttribute="top" id="FVb-bN-3lp"/>
+                    <constraint firstItem="szb-lC-h4b" firstAttribute="top" secondItem="9KF-kd-1ht" secondAttribute="top" constant="10" id="HZ3-yb-yOm"/>
+                    <constraint firstAttribute="bottom" secondItem="ufh-yP-Fpi" secondAttribute="bottom" id="OBK-yb-xMP"/>
+                    <constraint firstAttribute="trailing" secondItem="LMl-oU-wyd" secondAttribute="trailing" id="Pms-pD-tqh"/>
+                    <constraint firstItem="fYa-Yc-I2m" firstAttribute="top" secondItem="Aol-Am-mwF" secondAttribute="bottom" constant="2" id="QaH-pp-MIR"/>
+                    <constraint firstItem="7Wi-mZ-vTP" firstAttribute="top" secondItem="NJf-Ax-Qtw" secondAttribute="bottom" constant="5" id="R9n-90-QX2"/>
+                    <constraint firstItem="szb-lC-h4b" firstAttribute="leading" secondItem="9KF-kd-1ht" secondAttribute="leading" constant="15" id="RLa-NF-eZg"/>
+                    <constraint firstAttribute="trailing" secondItem="fYa-Yc-I2m" secondAttribute="trailing" constant="15" id="TeN-7a-SXr"/>
+                    <constraint firstAttribute="bottom" secondItem="LMl-oU-wyd" secondAttribute="bottom" id="Y6p-p3-B2X"/>
+                    <constraint firstItem="ufh-yP-Fpi" firstAttribute="top" secondItem="YjJ-1q-Aqa" secondAttribute="bottom" constant="8" id="Zd3-xZ-NbY"/>
+                    <constraint firstItem="7Wi-mZ-vTP" firstAttribute="leading" secondItem="9KF-kd-1ht" secondAttribute="leading" constant="15" id="aW0-Eh-efe"/>
+                    <constraint firstItem="Aol-Am-mwF" firstAttribute="leading" secondItem="szb-lC-h4b" secondAttribute="trailing" constant="7" id="dn2-nd-nt4"/>
+                    <constraint firstAttribute="trailing" secondItem="NJf-Ax-Qtw" secondAttribute="trailing" constant="15" id="f4h-lC-Rxh"/>
+                    <constraint firstItem="YjJ-1q-Aqa" firstAttribute="top" secondItem="7Wi-mZ-vTP" secondAttribute="bottom" constant="3" id="fQw-VT-zw5"/>
+                    <constraint firstItem="YjJ-1q-Aqa" firstAttribute="top" secondItem="NJf-Ax-Qtw" secondAttribute="bottom" constant="5" id="hU1-Ji-Nd9"/>
+                    <constraint firstItem="NJf-Ax-Qtw" firstAttribute="leading" secondItem="9KF-kd-1ht" secondAttribute="leading" constant="15" id="j45-C0-uqp"/>
+                    <constraint firstItem="fYa-Yc-I2m" firstAttribute="leading" secondItem="szb-lC-h4b" secondAttribute="trailing" constant="7" id="pEq-6q-iNv"/>
+                    <constraint firstItem="YjJ-1q-Aqa" firstAttribute="leading" secondItem="9KF-kd-1ht" secondAttribute="leading" constant="15" id="uud-cl-n4a"/>
+                    <constraint firstItem="LMl-oU-wyd" firstAttribute="leading" secondItem="9KF-kd-1ht" secondAttribute="leading" id="ytm-Dh-NrZ"/>
+                    <constraint firstItem="Aol-Am-mwF" firstAttribute="top" secondItem="szb-lC-h4b" secondAttribute="top" constant="5" id="zP0-Qz-bu3"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="hU1-Ji-Nd9"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="blogLineWidth" destination="zp9-os-jEH" id="E8D-eF-mTA"/>
+                <outlet property="commentAuthor" destination="fYa-Yc-I2m" id="tu1-lT-t7S"/>
+                <outlet property="commentText" destination="7Wi-mZ-vTP" id="L8k-Ow-61a"/>
+                <outlet property="heartButton" destination="jGK-bN-kS1" id="XCC-w2-GgM"/>
+                <outlet property="lineBlog" destination="hZT-Pk-ZJX" id="uyH-9g-W9X"/>
+                <outlet property="lineHeight" destination="rUD-kC-zSz" id="cat-a4-rcJ"/>
+                <outlet property="lineSeparator" destination="ufh-yP-Fpi" id="nKR-lU-s2u"/>
+                <outlet property="postSource" destination="lnk-sQ-Qjl" id="gJt-3f-bQf"/>
+                <outlet property="postStatus" destination="Aol-Am-mwF" id="5Vz-W9-DpU"/>
+                <outlet property="profileImage" destination="szb-lC-h4b" id="TF9-jV-kXQ"/>
+                <outlet property="repostButton" destination="J7J-8H-mk6" id="bdf-Mv-glD"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="240"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="angelina" width="376" height="376"/>
+        <image name="tumblrHeart" width="49" height="42"/>
+        <image name="tumblrRepost" width="48" height="46"/>
+    </resources>
+</document>
